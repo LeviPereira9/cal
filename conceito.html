@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceito</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main id="conceito">
+      <section>
+        <h1 style="text-align: center">Derivada</h1>
+        <p>
+          Quando existentes, as derivadas determinam a inclinação da reta
+          tangente à função \( f(x) \). Essa inclinação, ou taxa de variação, é
+          fundamental para resolver diversos problemas matemáticos. Para
+          calcular essa inclinação, é necessário determinar o limite:
+        </p>
+        <p>\( f'(x) = \lim_{{h \to 0}} \frac{f(x+h) - f(x)}{h} \)</p>
+        <p>
+          A derivada de uma função \( y = f(x) \) em um ponto \( x = x_0 \) é
+          igual ao valor da tangente trigonométrica do ângulo formado pela
+          tangente geométrica à curva representativa de \( y = f(x) \) no ponto
+          \( x = x_0 \). Em outras palavras, a derivada é o coeficiente angular
+          da reta tangente ao gráfico da função no ponto \( x_0 \).
+        </p>
+        <p>
+          As notações mais comuns para a derivada de \( f(x) \) são \( f'(x) \)
+          ou \( [f(x)]' \). Quando calculadas no ponto \( x_0 \), essas notações
+          se tornam \( f'(x_0) \) ou \( [f(x_0)]' \). Além disso, a derivada de
+          uma função \( y = f(x) \) pode ser representada pelos símbolos \( y'
+          \), \( \frac{dy}{dx} \) ou \( f'(x) \).
+        </p>
+        <p>
+          A derivada de uma função \( f(x) \) no ponto \( x_0 \) é dada por:
+        </p>
+        <div class="formula">
+          \[ \left( \frac{df}{dx} \right)(x_0) = f'(x_0) = \lim_{{x \to x_0}}
+          \frac{f(x) - f(x_0)}{x - x_0} = \lim_{{h \to 0}} \frac{f(x_0 + h) -
+          f(x_0)}{h} \]
+        </div>
+        <div class="regras">
+          <h2>Regras da derivação</h2>
+          <p><b>Constante: </b> Se \( f(x) = a \), então \( f'(x) = 0 \).</p>
+          <p>
+            <b>Potência: </b>Se \( f(x) = x^a \), então \( f'(x) = a \cdot
+            x^{a-1} \).
+          </p>
+          <p><b>Soma:</b> Se \( [f(x) + g(x)]' = f'(x) + g'(x) \).</p>
+          <p>
+            <b>Produto: </b>Se \( [f(x) \cdot g(x)]' = f'(x) \cdot g(x) + f(x)
+            \cdot g'(x) \).
+          </p>
+          <p>
+            <b>Quociente: </b>Se \( \left( \frac{f(x)}{g(x)} \right)' =
+            \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{(g(x))^2} \)
+          </p>
+          <p>
+            <b>Exponencial:</b>
+            Se \( f(x) = e^x \), então \( f'(x) = e^x \).
+          </p>
+          <p>
+            <b>Logarítmica natural:</b>
+            Se \( f(x) = \ln(x) \), então \( f'(x) = \frac{1}{x} \), para \( x >
+            0 \).
+          </p>
+          <p>
+            <b>Seno:</b>
+            Se \( f(x) = \sin(x) \), então \( f'(x) = \cos(x) \).
+          </p>
+          <p>
+            <b>Cosseno:</b>
+            Se \( f(x) = \cos(x) \), então \( f'(x) = -\sin(x) \).
+          </p>
+          <p>
+            <b>Tangente:</b>
+            Se \( f(x) = \tan(x) \), então \( f'(x) = \sec^2(x) \).
+          </p>
+        </div>
+      </section>
+      <section>
+        <h1 style="text-align: center">Integrais Indefinidas</h1>
+        <p>
+          As integrais indefinidas, também conhecidas como antiderivadas, são
+          ferramentas matemáticas que nos permitem "reverter" o processo de
+          derivação. Imagine que você tem uma função \( f(x) \) e calcula sua
+          derivada, encontrando \( f'(x) \). As integrais indefinidas buscam
+          encontrar a função original \( f(x) \) a partir de sua derivada \(
+          f'(x) \), como se estivéssemos desvendando um enigma matemático.
+        </p>
+
+        <h4>Símbolos e seus Significados:</h4>
+        <ul>
+          <li>
+            \( \int \): Este símbolo representa o integral, a operação
+            matemática que realiza a integração indefinida.
+          </li>
+          <li>
+            \( f(x) \): A função que queremos integrar, chamada de integrando.
+            Ela pode ser expressa por uma fórmula, gráfico ou tabela de valores.
+          </li>
+          <li>
+            \( dx \): A diferencial de \( x \), que indica a variável em relação
+            à qual estamos integrando.
+          </li>
+          <li>
+            \( C \): A constante de integração, um valor arbitrário que surge no
+            processo de integração indefinida.
+          </li>
+        </ul>
+
+        <h4>Visualizando a Integração:</h4>
+        <p>
+          A função \( f(x) \) traçando uma curva no plano cartesiano. A integral
+          indefinida de \( f(x) \) corresponde à família de funções primitivas
+          que passam por essa curva. Cada função primitiva \( F(x) \), derivada
+          em relação a \( x \), resulta em \( f(x) \).
+        </p>
+
+        <h4>Propriedades Essenciais:</h4>
+        <ul>
+          <li>
+            Aditividade: A integral da soma ou diferença de duas funções é a
+            soma ou diferença das integrais individuais.
+          </li>
+          <li>
+            Linearidade: Multiplicar o integrando por uma constante também
+            multiplica a integral indefinida pela mesma constante.
+          </li>
+          <li>
+            Teorema Fundamental do Cálculo: Se \( F(x) \) é uma primitiva de \(
+            f(x) \) (ou seja, \( F'(x) = f(x) \)), então a integral indefinida
+            de \( f(x) \) é igual a \( F(x) \) mais a constante de integração \(
+            C \): \[ \int f(x) \, dx = F(x) + C \]
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h1 style="text-align: center">Integrais Definidas</h1>
+
+        <p>
+          As integrais definidas são um conceito fundamental do Cálculo, com
+          diversas aplicações em áreas como Física, Engenharia e Economia. Elas
+          surgem como uma generalização do processo de cálculo de áreas,
+          permitindo determinar a área sob a curva de uma função em um intervalo
+          específico.
+        </p>
+
+        <div class="imagem">
+          <img
+            src="https://static.wixstatic.com/media/184af9_911aff99beeb48df81704f0b13bca53d~mv2.png/v1/fill/w_307,h_260,al_c,q_85,enc_auto/184af9_911aff99beeb48df81704f0b13bca53d~mv2.png"
+            alt="Areazuda"
+          />
+        </div>
+
+        <p>
+          Uma função \( f(x) \) traçando uma curva no plano cartesiano. A
+          integral definida de \( f(x) \) no intervalo \([a, b]\) busca
+          quantificar a área sombreada entre essa curva e o eixo \( x \) nesse
+          intervalo específico.
+        </p>
+
+        <h4>Simbologia e seus significados:</h4>
+        <ul>
+          <li>\( \int \): Representa o símbolo da integral definida.</li>
+          <li>
+            \( f(x) \): A função que queremos integrar, chamada de integrando.
+          </li>
+          <li>
+            \([a, b]\): O intervalo de integração, onde \( a \) é o limite
+            inferior e \( b \) o limite superior.
+          </li>
+          <li>
+            \( S \): A área sombreada entre a curva de \( f(x) \) e o eixo \( x
+            \) no intervalo \([a, b]\).
+          </li>
+        </ul>
+
+        <h4>Visualizando a área:</h4>
+        <p>
+          A integral definida de \( f(x) \) no intervalo \([a, b]\) representa o
+          valor numérico dessa área sombreada. É como se estivéssemos "cortando"
+          a área em infinitas fatias finas e somando suas áreas individuais para
+          obter o total.
+        </p>
+
+        <h4>Propriedades importantes:</h4>
+        <ul>
+          <li>
+            Aditividade: Se dividirmos o intervalo \([a, b]\) em subintervalos
+            menores, a integral definida da função \( f(x) \) na soma desses
+            subintervalos é igual à integral definida em todo o intervalo
+            original.
+          </li>
+          <li>
+            Linearidade: Multiplicar o integrando \( f(x) \) por uma constante
+            \( k \) multiplica a integral definida por \( k \).
+          </li>
+          <li>
+            Teorema Fundamental do Cálculo: Se \( F(x) \) é uma primitiva de \(
+            f(x) \) (ou seja, \( F'(x) = f(x) \)), então a integral definida de
+            \( f(x) \) no intervalo \([a, b]\) é igual à diferença entre os
+            valores de \( F(x) \) em \( a \) e \( b \): \[ \int_a^b f(x) \, dx =
+            F(b) - F(a) \]
+          </li>
+        </ul>
+
+        <div class="regras integrais">
+          <h2>Regras de Integração:</h2>
+
+          <p class="regra_titulo">Regra da Potência:</p>
+          <p class="regra_regra">
+            \[ \int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad \text{para} \quad
+            n \neq -1 \]
+          </p>
+
+          <p class="regra_titulo">
+            Integral de uma Constante (onde \( a \) é uma constante):
+          </p>
+          <p class="regra_regra">\[ \int a \, dx = ax + C \]</p>
+
+          <p class="regra_titulo">Regra da Soma/Diferença:</p>
+          <p class="regra_regra">
+            \[ \int [f(x) \pm g(x)] \, dx = \int f(x) \, dx \pm \int g(x) \, dx
+            \]
+          </p>
+
+          <p class="regra_titulo">
+            Regra da Constante Multiplicativa (onde \( a \) é uma constante):
+          </p>
+          <p class="regra_regra">
+            \[ \int a \cdot f(x) \, dx = a \int f(x) \, dx \]
+          </p>
+
+          <p class="regra_titulo">Integral de \( e^x \):</p>
+          <p class="regra_regra">\[ \int e^x \, dx = e^x + C \]</p>
+
+          <p class="regra_titulo">Integral de \( \frac{1}{x} \):</p>
+          <p class="regra_regra">\[ \int \frac{1}{x} \, dx = \ln |x| + C \]</p>
+
+          <p class="regra_titulo">Integral de Seno:</p>
+          <p class="regra_regra">\( \int \sin(x) \, dx = -\cos(x) + C \)</p>
+          <p class="regra_titulo">Integral de Cosseno:</p>
+          <p class="regra_regra">\[ \int \cos(x) \, dx = \sin(x) + C \]</p>
+
+          <p class="regra_titulo">Integral de \( \sec^2(x) \):</p>
+          <p class="regra_regra">\[ \int \sec^2(x) \, dx = \tan(x) + C \]</p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
